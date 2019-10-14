@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.float-left {
+  float: left
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.spin {
+  height: 300px;
+  width: 50px;
+  
+  animation-duration: 0.3s;
+  transform-style: preserve-3d;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-animation:x-spin 4s linear infinite;
+  -moz-animation:x-spin 4s linear infinite;
+  animation:x-spin 4s linear infinite;
+
+ 
+}
+@-moz-keyframes x-spin {
+  0% {transform: rotateX(0deg);}
+  50% {transform: rotateX(180deg);}
+  100% {transform: rotateX(360deg);}
+
+}
+@-webkit-keyframes x-spin { 
+  0% {transform: rotateX(0deg);}
+  50% {transform: rotateX(180deg);}
+  100% {transform: rotateX(360deg);}
+}
+@keyframes x-spin { 
+  0% {transform: rotateX(0deg);}
+  50% {transform: rotateX(180deg);}
+  100% {transform: rotateX(360deg);}
+
+}
+@-webkit-keyframes x-spin {
+  0% {transform: rotateX(0deg);}
+  50% {transform: rotateX(180deg);}
+  100% {transform: rotateX(360deg);}
+}
+
+.slot-symbol {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
